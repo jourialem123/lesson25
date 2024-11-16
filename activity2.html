@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity2</title>
 </head>
 <body>
-    
+  <h2>Conditionalstatements in Javascript</h2>  
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <script>
+    var time=new Date().getHours();
+    var greeting="";
+    if (time<10){
+        greeting="Good Morning";
+    }
+    else if(time<20){
+        greeting="Good Evening";
+    }
+    else{
+        greeting="Good day";
+    }
+    document.getElementById("p1").innerHTML="The current time is "+time;
+    document.getElementById("p2").innerHTML=greeting;
+  </script>
 </body>
 </html>
